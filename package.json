@@ -1,0 +1,43 @@
+{
+  "name": "tamil-char-count",
+  "version": "1.0.0",
+  "description": "Tamil character count utility for analyzing vowels and consonants in Tamil text.",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && parcel build src/index.ts",
+    "check": "tsc",
+    "test": "jest",
+    "watch": "parcel watch",
+    "preversion": "npm run check && npm run test",
+    "version": "npm run build && git add dist",
+    "release": "git push && git push --tags"
+  },
+  "keywords": [
+    "character counter",
+    "Tamil characters",
+    "syllabification",
+    "syllables"
+  ],
+  "author": "Arunkumar Selvam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/er-arunkumarselvam/tamil-char-count.git"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.10.2",
+    "@parcel/transformer-typescript-types": "^2.10.2",
+    "@types/jest": "^29.5.7",
+    "jest": "^29.7.0",
+    "parcel": "^2.10.2",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
