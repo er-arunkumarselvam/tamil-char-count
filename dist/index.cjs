@@ -66,10 +66,10 @@ const $99c041d34ca81128$export$81441ef93d55980e = {
     "\u0BB7": "extra_consonants",
     "\u0BB8": "extra_consonants",
     "\u0BB9": "extra_consonants",
-    "\u25CC\u0BCD": "yogavaahas",
+    "\u0BCD": "vowel_marks",
     "\u0BBE": "vowel_marks",
     "\u0BBF": "vowel_marks",
-    "\u25CC\u0BC0": "vowel_marks",
+    "\u0BC0": "vowel_marks",
     "\u0BC1": "vowel_marks",
     "\u0BC2": "vowel_marks",
     "\u0BC6": "vowel_marks",
@@ -149,7 +149,7 @@ class $823e42faaa542640$export$3ae2e3e9a9c21123 {
         this.isWhitespace = ()=>this.type === "whitespace";
         this.isUnrecognised = ()=>this.type === "unrecognised";
         this.isEndOfInput = ()=>this.type === "end_of_input";
-        this.isVowelAttachment = ()=>this.isYogavaha() || this.isAccent();
+        this.isVowelAttachment = ()=>this.isVowelMark() || this.isAccent();
         this.isConsonantAttachment = ()=>this.isVirama() || this.isYogavaha() || this.isAccent() || this.isVowelMark() || this.isMatra();
         this.isVowelMarkAttachment = ()=>this.isYogavaha() || this.isAccent() || this.isMatra();
         this.value = value;

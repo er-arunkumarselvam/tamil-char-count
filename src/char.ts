@@ -66,7 +66,7 @@ export class Char {
 
   isEndOfInput = () => this.type === CharType.EndOfInput;
 
-  isVowelAttachment = () => this.isYogavaha() || this.isAccent();
+  isVowelAttachment = () => this.isVowelMark() || this.isAccent();
 
   isConsonantAttachment = () =>
     this.isVirama() ||
