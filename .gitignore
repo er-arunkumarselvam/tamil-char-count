@@ -12,3 +12,4 @@ npm-debug.log*
 .parcel-cache
 node_modules
 _temp
+.npmignore
