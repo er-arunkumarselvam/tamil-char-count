@@ -1,6 +1,6 @@
 {
   "name": "tamil-char-count",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tamil character count utility for analyzing vowels and consonants in Tamil text.",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
